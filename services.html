@@ -7,44 +7,58 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html" aria-current="page">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-  <h1>Our Services</h1>
-  <table class="pricing-table">
-    <thead>
-      <tr>
-        <th>Service</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>PC & Laptop Repair</td>
-        <td>$89</td>
-      </tr>
-      <tr>
-        <td>Virus & Malware Removal</td>
-        <td>$69</td>
-      </tr>
-      <tr>
-        <td>Data Recovery</td>
-        <td>$129</td>
-      </tr>
-      <tr>
-        <td>Network Setup & Troubleshooting</td>
-        <td>$79</td>
-      </tr>
-      <tr>
-        <td>iPhone Repair & Troubleshooting</td>
-        <td>$99</td>
-      </tr>
-    </tbody>
-  </table>
-</main>
+  <header>
+    <div class="logo">FixIT Solutions</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" aria-current="page" class="active">Services</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main class="services-container">
+    <div class="services-header">
+      <h1>Our Services</h1>
+      <p>Transparent pricing for reliable, expert tech support.</p>
+    </div>
+
+    <div class="table-responsive">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Starting Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PC & Laptop Repair</td>
+            <td>$90</td>
+          </tr>
+          <tr>
+            <td>Virus & Malware Removal</td>
+            <td>$70</td>
+          </tr>
+          <tr>
+            <td>Data Recovery (Logical)</td>
+            <td>$129</td>
+          </tr>
+          <tr>
+            <td>Network Setup & Troubleshooting</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>iPhone Repair & Troubleshooting</td>
+            <td>$99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size: 0.85em; color: #555; margin-top: 10px;">
+      *All serevices subject to diagnostic assessment. Starting prices reflect labor base rates.
+    </p>
+  
+  </main>
 </body>
 </html>
