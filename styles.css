@@ -352,3 +352,38 @@ nav a:hover, nav a.active {
     margin-bottom: 5rem !important;
   }
 }
+
+/* =========================================
+   Fit Services Page on Mobile Without Scrolling
+========================================= */
+@media screen and (max-width: 768px) {
+  .services-page {
+    padding: 1rem 3% 5rem 3%; /* Tighter padding to save vertical space */
+    justify-content: center;   /* Centers everything vertically on screen */
+  }
+
+  .services-container {
+    padding: 1rem;
+    max-height: 82vh;        /* Keeps the white card from overflowing the screen */
+    overflow-y: auto;        /* Allows just the table inside to scroll if needed, keeping disclaimer visible */
+  }
+
+  .services-header {
+    margin-bottom: 1.5rem;   /* Reduces extra gap space */
+  }
+
+  .services-header h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .pricing-table th, 
+  .pricing-table td {
+    padding: 0.5rem 0.75rem; /* Compacts table rows slightly */
+    font-size: 0.9rem;
+  }
+
+  .services-disclaimer {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
