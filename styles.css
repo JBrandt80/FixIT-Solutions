@@ -512,3 +512,21 @@ nav a:hover, nav a.active {
     gap: 0.5rem !important;
   }
 }
+
+/* =========================================
+   Scale Hero Images Smaller to Fit Screen
+========================================= */
+@media screen and (max-width: 768px) {
+  .hero-images {
+    gap: 0.5rem !important; /* Tighten the space between images */
+  }
+
+  .hero-images img {
+    width: 110px !important;   /* Much smaller width */
+    max-height: 70px !important;  /* Much smaller height */
+    object-fit: contain !important; /* Ensures entire image fits inside the box */
+    background-color: rgba(255,255,255,0.1); /* Adds a subtle background behind images */
+    padding: 2px;
+    border-radius: 4px !important;
+  }
+}
