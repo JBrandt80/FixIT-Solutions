@@ -1,8 +1,8 @@
 {
   "name": "FixIT Solutions",
   "short_name": "FixIT",
-  "start_url": "/index.html",
-  "scope": "./",
+  "start_url": "https://jbrandt80.github.io/FixIT/",
+  "scope": "https://jbrandt80.github.io/FixIT/",
   "display": "standalone",
   "background_color": "#0056b3",
   "theme_color": "#0056b3",
