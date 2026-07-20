@@ -2,6 +2,7 @@
   "name": "FixIT Solutions",
   "short_name": "FixIT",
   "start_url": "/index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0056b3",
   "theme_color": "#0056b3",
