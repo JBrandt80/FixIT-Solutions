@@ -387,3 +387,44 @@ nav a:hover, nav a.active {
     margin-top: 0.75rem;
   }
 }
+
+/* =========================================
+   Fixed Non-Scrolling Mobile Layout
+========================================= */
+@media screen and (max-width: 768px) {
+  html, body {
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .services-page,
+  .contact-page {
+    height: calc(100vh - 60px) !important; /* Subtracts space for the top header */
+    min-height: unset !important;
+    padding: 0.5rem 3% !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+
+  .services-container,
+  .contact-container {
+    max-height: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .services-header {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .pricing-table th, 
+  .pricing-table td {
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .services-disclaimer {
+    font-size: 0.7rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
