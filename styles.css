@@ -158,7 +158,7 @@ nav a:hover, nav a.active {
 .services-header {
   text-align: center;
   margin-bottom: 3rem;
-  color #0056b3;
+  color: #0056b3;
 }
 
 .services-header h1 {
@@ -287,4 +287,40 @@ nav a:hover, nav a.active {
   }
 }
 
-/* Timestamp update */
+/* =========================================
+   Global Mobile Responsiveness
+========================================= */
+@media screen and (max-width: 768px) {
+  /* Make header stack vertically on phones */
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 0.2rem 0.5rem;
+  }
+
+  /* Prevent body overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Adjust headings universally for smaller screens */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+}
