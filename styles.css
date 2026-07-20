@@ -230,17 +230,28 @@ nav a:hover, nav a.active {
 /* =========================================
    Contact Page
 ========================================= */
+.contact-page {
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+  min-height: 100vh;
+  padding: 4.5rem 5% 2rem 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .contact-container {
+  width: 100%;
   max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 5%;
+  margin: 0 auto;
 }
 
 .contact-info {
   background-color: #ffffff;
   padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   color: #333;
   text-align: center;
 }
