@@ -494,3 +494,21 @@ nav a:hover, nav a.active {
     object-fit: cover !important;
   }
 }
+
+/* =========================================
+   Force Both Home Images to Fit in Viewport
+========================================= */
+@media screen and (max-width: 768px) {
+  .hero-images img {
+    width: 150px !important;   /* Significantly reduces width */
+    max-height: 100px !important;  /* Drastically reduces height */
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+  }
+  
+  /* Tighten the gap between the two images as well */
+  .hero-images {
+    gap: 0.5rem !important;
+  }
+}
