@@ -9,6 +9,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -135,9 +136,8 @@ nav a:hover, nav a.active {
 .services-page {
   background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
   min-height: 100vh;
-  padding: 4rem 5%;
-  display: flex;
-  flex-direction: column;
+  padding: 6rem 5% 4rem 5%;
+  box-sizing: border-box;
 }
 
 .services-container {
@@ -211,6 +211,13 @@ nav a:hover, nav a.active {
 .pricing-table td:last-child {
   font-weight: bold;
   color: #0056b3;
+}
+
+.services-disclaimer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 1.5rem;
 }
 
 /* =========================================
