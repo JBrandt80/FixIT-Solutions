@@ -332,3 +332,13 @@ nav a:hover, nav a.active {
 .contact-page {
   padding-bottom: 5rem; /* Pushes content up so mobile browser bars don't cut it off */
 }
+
+/* =========================================
+   Mobile Bottom Padding Fix
+========================================= */
+.services-page,
+.contact-page {
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 7rem; 
+}
