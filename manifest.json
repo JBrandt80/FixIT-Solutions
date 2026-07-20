@@ -1,8 +1,8 @@
 {
   "name": "FixIT Solutions",
   "short_name": "FixIT",
-  "start_url": "FixIT-Solutions/",
-  "scope": "FixIT-Solutions/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0056b3",
   "theme_color": "#0056b3",
