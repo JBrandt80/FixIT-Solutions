@@ -280,16 +280,21 @@ html, body {
     margin-bottom: 8px !important;
   }
 
-  /* White Card Scroll Adjustments */
+ /* Centered White Card & Page Layout */
+  .services-page, .contact-page {
+    height: 100vh !important;
+    overflow: hidden !important;
+    padding: 1rem 15px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
   .services-container, .contact-container {
     max-height: 78vh !important;
     overflow-y: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
     align-self: center !important;
   }
-
-  .services-page, .contact-page {
-    align-items: center !important;
-  }
-}
