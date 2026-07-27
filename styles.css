@@ -207,3 +207,32 @@ html, body {
     margin: auto !important;
   }
 }
+
+/* Seamless top navigation bar */
+.top-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #0056b3 !important;
+  padding-left: 25px; /* Adds blue space to the left of the logo */
+  padding-right: 25px; /* Brings nav links inward from the edge */
+  padding-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.top-nav-bar nav {
+  margin-right: 20px; /* Pulls the links further toward the left/center */
+}
+
+/* Center the disclaimer text under the white box */
+.services-disclaimer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff; /* Made white so it stands out clearly against the solid blue background */
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
