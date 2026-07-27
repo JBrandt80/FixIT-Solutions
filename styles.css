@@ -227,12 +227,11 @@ html, body {
 
 /* Center the disclaimer text under the white box */
 .services-disclaimer {
-  text-align: center;
+  text-align: center !important;
   font-size: 0.8rem;
   color: #ffffff; /* Made white so it stands out clearly against the solid blue background */
   margin-top: 1rem;
-  width: 100%;
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100% !important;
+  display: block;
+  align-self: center;
 }
