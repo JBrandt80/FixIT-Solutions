@@ -209,41 +209,44 @@ html, body {
 @media screen and (max-width: 768px) {
   html, body {
     height: 100vh !important;
-    width: 100vw !important;
-    overflow: hidden !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
     margin: 0 !important;
-    padding: 5px 0 50px 0 !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
     text-align: center !important;
   }
 
   .hero, .services-page, .contact-page {
     height: 100vh !important;
-    width: 100vw !important;
+    width: 100% !important;
     overflow: hidden !important;
-    padding: 5px 0 !important;
+    padding: 8px 0 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
   }
 
-  /* Make logo larger and give it proper spacing */
+  /* Centered larger logo */
   .top-nav-bar {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 8px 0 4px 0 !important;
+    padding: 5px 0 !important;
     width: 100% !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
     gap: 4px !important;
   }
 
   .top-nav-bar img {
-    height: 55px !important; /* Increased logo size */
+    height: 60px !important;
     width: auto !important;
-    margin: 0 auto 4px auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
     display: block !important;
   }
 
@@ -261,43 +264,48 @@ html, body {
     margin: 0 !important;
   }
 
-  /* Push hero content down slightly from the nav */
+  /* Hero Content Layout */
   .hero-content {
+    display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
     text-align: center !important;
-    margin: 0.75rem auto 0 auto !important;
+    margin: 0.5rem auto 0 auto !important;
     width: 90% !important;
   }
 
   .hero-images {
-    margin: 0.5rem auto 0 auto !important;
-    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
+    margin: 0.4rem auto 0 auto !important;
+    width: 100% !important;
   }
 
   .hero-images img {
     width: 100% !important;
-    max-width: 240px !important;
+    max-width: 230px !important;
     height: auto !important;
+    margin: 0 auto !important;
   }
 
   h1 {
-    font-size: 1.15rem !important;
+    font-size: 1.1rem !important;
     margin: 2px 0 !important;
   }
 
   p {
-    font-size: 0.78rem !important;
+    font-size: 0.75rem !important;
     margin-bottom: 4px !important;
   }
 
-  /* Push white content cards down slightly and prevent bottom clipping */
+  /* Centered White Content Cards */
   .services-container, .contact-container {
-    max-height: 72vh !important;
+    max-height: 70vh !important;
     overflow-y: auto !important;
-    margin: 12px auto 0 auto !important;
+    margin: 10px auto !important;
     width: 92% !important;
-    max-width: 400px !important;
+    max-width: 380px !important;
     align-self: center !important;
   }
 }
