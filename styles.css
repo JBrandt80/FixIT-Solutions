@@ -1,5 +1,5 @@
 /* =========================================
-   Base Styles & Seamless Layout Reset
+    Base Styles & Seamless Layout Reset
 ========================================= */
 * {
   margin: 0;
@@ -35,13 +35,19 @@ html, body {
   align-items: center;
   width: 100%;
   background-color: #0056b3 !important;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 1rem;
   flex-shrink: 0;
 }
 
 .top-nav-bar img {
-  height: 110px; /* Scales down logo slightly so it fits perfectly without causing overflow */
+  height: 110px;
   vertical-align: middle;
+}
+
+.top-nav-bar nav {
+  margin-right: 20px;
 }
 
 .top-nav-bar nav a {
@@ -58,7 +64,7 @@ html, body {
 }
 
 /* =========================================
-   Home Page Content Layout
+    Home Page Content Layout
 ========================================= */
 .hero-content {
   flex: 1;
@@ -66,7 +72,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 4rem auto 0 auto; /* Added top margin to push Fix IT Solutions and everything under it down */
+  margin: 4rem auto 0 auto;
   width: 100%;
   gap: 3rem;
 }
@@ -104,32 +110,23 @@ html, body {
 
 .hero-images {
   display: flex;
-  flex-direction: column; /* Stacks the two image cards vertically */
+  flex-direction: column;
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
 }
 
 .hero-images img {
-  width: 320px; /* Increased width to make them larger */
-  height: 190px; /* Increased height to match */
+  width: 320px;
+  height: 190px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  object-fit: contain; /* Prevents the image contents from being cropped */
-  background-color: #004080; /* Optional: matches background if aspect ratio leaves padding */
-}
-
-/* Mobile override to keep full image visible */
-@media screen and (max-width: 768px) {
-  .hero-images img {
-    width: 100% !important;
-    max-width: 320px !important;
-    height: auto !important;
-  }
+  object-fit: contain;
+  background-color: #004080;
 }
 
 /* =========================================
-   Services & Contact White Card Layouts
+    Services & Contact White Card Layouts
 ========================================= */
 .services-container, 
 .contact-container {
@@ -140,7 +137,7 @@ html, body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 850px;
-  margin: auto auto; /* Centers the white card perfectly in the remaining vertical space */
+  margin: auto auto;
   box-sizing: border-box;
 }
 
@@ -184,10 +181,16 @@ html, body {
 }
 
 .services-disclaimer {
-  text-align: center;
+  text-align: center !important;
   font-size: 0.8rem;
-  color: #111;
-  margin-top: 0.75rem;
+  color: #000000;
+  margin-top: 1rem;
+  width: 100% !important;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .contact-info h1 {
@@ -200,11 +203,17 @@ html, body {
   font-size: 1.1rem;
 }
 
-/* Prevent scrolling on mobile screens as well */
-@media screen and (max-width: 767px) {
+/* =========================================
+    Mobile Responsive Overrides (Unified)
+========================================= */
+@media screen and (max-width: 768px) {
   html, body {
     height: 100vh !important;
     overflow: hidden !important;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 5px 10px 60px 10px;
+    box-sizing: border-box;
   }
 
   .hero, .services-page, .contact-page {
@@ -213,112 +222,54 @@ html, body {
     padding: 1rem 3% !important;
   }
 
-  .services-container, .contact-container {
-    max-height: 78vh !important;
-    overflow-y: auto !important; /* Allows scrolling *only* inside the white card if text/tables are long */
-    margin: auto !important;
-  }
-}
-
-/* Seamless top navigation bar */
-.top-nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #0056b3 !important;
-  padding-left: 25px; /* Adds blue space to the left of the logo */
-  padding-right: 25px; /* Brings nav links inward from the edge */
-  padding-bottom: 1rem;
-  flex-shrink: 0;
-}
-
-.top-nav-bar nav {
-  margin-right: 20px; /* Pulls the links further toward the left/center */
-}
-
-/* Center the disclaimer text under the white box */
-.services-disclaimer {
-  text-align: center !important;
-  font-size: 0.8rem;
-  color: #000000; 
-  margin-top: 1rem;
-  width: 100% !important;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-@media (max-width: 768px) {
+  /* Fixed Navigation and Logo stacking */
   .top-nav-bar {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-    padding-right: 0;
-    gap: 0.5rem;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 10px !important;
+    gap: 5px !important;
+  }
+
+  .top-nav-bar img {
+    height: 40px !important;
+    width: auto !important;
+    margin-bottom: 5px !important;
   }
 
   .top-nav-bar nav {
-    margin-right: 0;
-    display: flex;
-    gap: 1rem;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem !important;
-  }
-
-  .hero-images {
-    margin-top: 2rem;
-  }
-}
-
-/* Mobile Responsive Overrides */
-@media screen and (max-width: 768px) {
-  /* 1. Page and Viewport Box */
-  html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 10px 10px 80px 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  /* 2. Top Navigation Bar & Logo spacing */
-  .top-nav-bar {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding-top: 15px !important; /* Pushes the logo down from the top edge */
-  }
-
-  .top-nav-bar img,
-  .logo img,
-  img[src*="logo"] {
-    max-width: 120px !important;
-    max-height: 45px !important;
-    height: auto !important;
-    margin: 0 auto 12px auto !important; /* Adds space below the logo for the links */
-    display: block !important;
-    float: none !important;
-  }
-
-  .top-nav-bar nav,
-  .nav-links {
+    margin-right: 0 !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
-    gap: 20px !important;
+    gap: 15px !important;
     width: 100% !important;
-    margin-bottom: 15px !important;
   }
 
-  /* 3. Typography scaling */
+  .top-nav-bar nav a {
+    font-size: 15px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Hero Content & Spacing */
+  .hero-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .hero-images {
+    margin-top: 1rem !important;
+  }
+
+  .hero-images img {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+
+  /* Typography Scaling */
   h1 {
     font-size: 1.3rem !important;
     margin: 5px 0 !important;
@@ -327,21 +278,12 @@ html, body {
   p {
     font-size: 0.85rem !important;
     margin-bottom: 8px !important;
-    text-align: center !important;
   }
 
-  /* 4. Hero & Gallery images scaling */
-  .hero-content {
-    flex-direction: column !important;
-    text-align: center !important;
-    padding: 10px 5px !important;
-  }
-
-  .hero-images img,
-  .image-container img,
-  .gallery img {
-    max-height: 110px !important;
-    width: auto !important;
-    object-fit: contain;
+  /* White Card Scroll Adjustments */
+  .services-container, .contact-container {
+    max-height: 78vh !important;
+    overflow-y: auto !important;
+    margin: auto !important;
   }
 }
