@@ -115,7 +115,17 @@ html, body {
   height: 190px; /* Increased height to match */
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  object-fit: cover;
+  object-fit: contain; /* Prevents the image contents from being cropped */
+  background-color: #004080; /* Optional: matches background if aspect ratio leaves padding */
+}
+
+/* Mobile override to keep full image visible */
+@media screen and (max-width: 768px) {
+  .hero-images img {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+  }
 }
 
 /* =========================================
