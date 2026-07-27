@@ -317,20 +317,32 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  html, body {
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  /* Tighten up overall spacing */
+  body {
+    padding-bottom: 40px;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 10px;
+  /* Shrink the main heading and intro text slightly */
+  h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Scale down the quote button padding */
+  .btn, button, .cta-button {
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Shrink the image gallery containers so they don't overflow */
+  .image-container img, .gallery img {
+    max-height: 120px !important;
+    object-fit: cover;
   }
 }
