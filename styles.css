@@ -279,58 +279,46 @@ html, body {
 
 /* Mobile Responsive Overrides */
 @media screen and (max-width: 768px) {
+  /* 1. Page and Viewport Box */
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 10px 10px 80px 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* 2. Top Navigation Bar & Logo spacing */
   .top-nav-bar {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    padding: 10px 0 !important;
+    justify-content: center !important;
+    padding-top: 15px !important; /* Pushes the logo down from the top edge */
   }
 
-  /* Shrink the large logo image so nav links fit underneath */
   .top-nav-bar img,
-  .logo img {
-    max-width: 140px !important;
+  .logo img,
+  img[src*="logo"] {
+    max-width: 120px !important;
+    max-height: 45px !important;
     height: auto !important;
-    margin-bottom: 8px !important;
+    margin: 0 auto 12px auto !important; /* Adds space below the logo for the links */
+    display: block !important;
+    float: none !important;
   }
 
-  .top-nav-bar nav {
-    margin-right: 0 !important;
+  .top-nav-bar nav,
+  .nav-links {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     gap: 20px !important;
     width: 100% !important;
+    margin-bottom: 15px !important;
   }
 
-  /* Stack Hero Section on Homepage */
-  .hero-content {
-    flex-direction: column !important;
-    text-align: center !important;
-    padding: 20px 10px !important;
-  }
-
-  .hero-images {
-    width: 100% !important;
-    justify-content: center !important;
-    margin-top: 1.5rem !important;
-  }
-}
-
-@media (max-width: 768px) {
-  html, body {
-    height: 100vh;
-    max-height: 100vh;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 5px 10px 60px 10px;
-    box-sizing: border-box;
-  }
-
-  /* Shrink header logo and fonts to save vertical space */
-  img[src*="logo"], .logo {
-    max-height: 50px !important;
-  }
-
+  /* 3. Typography scaling */
   h1 {
     font-size: 1.3rem !important;
     margin: 5px 0 !important;
@@ -339,33 +327,21 @@ html, body {
   p {
     font-size: 0.85rem !important;
     margin-bottom: 8px !important;
+    text-align: center !important;
   }
 
-  /* Scale down images so they never get cut off */
-  img {
-    max-height: 100px !important;
-    width: auto;
+  /* 4. Hero & Gallery images scaling */
+  .hero-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 10px 5px !important;
+  }
+
+  .hero-images img,
+  .image-container img,
+  .gallery img {
+    max-height: 110px !important;
+    width: auto !important;
     object-fit: contain;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Center and scale the logo on its own line */
-  img[src*="logo"], .logo {
-    display: block !important;
-    margin: 0 auto 10px auto !important;
-    max-height: 40px !important;
-    float: none !important;
-  }
-
-  /* Force the links to sit in a clean row right below the logo */
-  a {
-    display: inline-block !important;
-    margin: 0 12px !important;
-  }
-
-  /* Center whatever element is holding your links */
-  div, p {
-    text-align: center;
   }
 }
