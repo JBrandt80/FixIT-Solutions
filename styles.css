@@ -315,3 +315,9 @@ html, body {
     margin-top: 1.5rem !important;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
