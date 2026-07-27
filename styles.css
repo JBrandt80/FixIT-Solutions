@@ -219,7 +219,19 @@ html, body {
   .hero, .services-page, .contact-page {
     height: 100vh !important;
     overflow: hidden !important;
-    padding: 1rem 3% !important;
+    padding: 1rem 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .services-container, .contact-container {
+    max-height: 78vh !important;
+    overflow-y: auto !important;
+    margin: 0 auto !important;
+    width: 92% !important;
+    max-width: 450px !important;
   }
 
   /* Fixed Navigation and Logo stacking */
