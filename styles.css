@@ -212,7 +212,7 @@ html, body {
     width: 100vw !important;
     overflow: hidden !important;
     margin: 0 !important;
-    padding: 10px 0 60px 0 !important;
+    padding: 5px 0 50px 0 !important;
     box-sizing: border-box !important;
     text-align: center !important;
   }
@@ -221,7 +221,7 @@ html, body {
     height: 100vh !important;
     width: 100vw !important;
     overflow: hidden !important;
-    padding: 10px 0 !important;
+    padding: 5px 0 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -229,21 +229,21 @@ html, body {
     margin: 0 !important;
   }
 
-  /* Fixed Navigation and Logo stacking */
+  /* Make logo larger and give it proper spacing */
   .top-nav-bar {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 5px 0 !important;
+    padding: 8px 0 4px 0 !important;
     width: 100% !important;
     margin: 0 !important;
-    gap: 5px !important;
+    gap: 4px !important;
   }
 
   .top-nav-bar img {
-    height: 40px !important;
+    height: 55px !important; /* Increased logo size */
     width: auto !important;
-    margin: 0 auto 5px auto !important;
+    margin: 0 auto 4px auto !important;
     display: block !important;
   }
 
@@ -261,42 +261,41 @@ html, body {
     margin: 0 !important;
   }
 
-  /* Hero Content & Spacing */
+  /* Push hero content down slightly from the nav */
   .hero-content {
     flex-direction: column !important;
     text-align: center !important;
-    margin: 1rem auto 0 auto !important;
+    margin: 0.75rem auto 0 auto !important;
     width: 90% !important;
   }
 
   .hero-images {
-    margin: 0.75rem auto 0 auto !important;
+    margin: 0.5rem auto 0 auto !important;
     width: 100% !important;
     align-items: center !important;
   }
 
   .hero-images img {
     width: 100% !important;
-    max-width: 260px !important;
+    max-width: 240px !important;
     height: auto !important;
   }
 
-  /* Typography Scaling */
   h1 {
-    font-size: 1.2rem !important;
-    margin: 3px 0 !important;
+    font-size: 1.15rem !important;
+    margin: 2px 0 !important;
   }
 
   p {
-    font-size: 0.8rem !important;
-    margin-bottom: 5px !important;
+    font-size: 0.78rem !important;
+    margin-bottom: 4px !important;
   }
 
-  /* Perfectly Centered White Content Cards */
+  /* Push white content cards down slightly and prevent bottom clipping */
   .services-container, .contact-container {
-    max-height: 75vh !important;
+    max-height: 72vh !important;
     overflow-y: auto !important;
-    margin: 10px auto 0 auto !important;
+    margin: 12px auto 0 auto !important;
     width: 92% !important;
     max-width: 400px !important;
     align-self: center !important;
