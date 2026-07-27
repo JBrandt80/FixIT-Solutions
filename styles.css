@@ -206,7 +206,7 @@ html, body {
 /* =========================================
     Mobile Responsive Overrides (Unified)
 ========================================= */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
