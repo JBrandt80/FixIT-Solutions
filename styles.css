@@ -317,32 +317,34 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  /* Tighten up overall spacing */
-  body {
-    padding-bottom: 40px;
+  html, body {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 5px 10px 60px 10px;
+    box-sizing: border-box;
   }
 
-  /* Shrink the main heading and intro text slightly */
+  /* Shrink header logo and fonts to save vertical space */
+  img[src*="logo"], .logo {
+    max-height: 50px !important;
+  }
+
   h1 {
-    font-size: 1.5rem !important;
-    margin-bottom: 5px !important;
+    font-size: 1.3rem !important;
+    margin: 5px 0 !important;
   }
 
   p {
-    font-size: 0.9rem !important;
-    margin-bottom: 10px !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 8px !important;
   }
 
-  /* Scale down the quote button padding */
-  .btn, button, .cta-button {
-    padding: 8px 16px !important;
-    font-size: 0.9rem !important;
-    margin-bottom: 10px !important;
-  }
-
-  /* Shrink the image gallery containers so they don't overflow */
-  .image-container img, .gallery img {
-    max-height: 120px !important;
-    object-fit: cover;
+  /* Scale down images so they never get cut off */
+  img {
+    max-height: 100px !important;
+    width: auto;
+    object-fit: contain;
   }
 }
