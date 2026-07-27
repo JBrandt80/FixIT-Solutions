@@ -229,9 +229,12 @@ html, body {
 .services-disclaimer {
   text-align: center !important;
   font-size: 0.8rem;
-  color: #ffffff; /* Made white so it stands out clearly against the solid blue background */
+  color: #000000; 
   margin-top: 1rem;
   width: 100% !important;
-  display: block;
-  align-self: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
