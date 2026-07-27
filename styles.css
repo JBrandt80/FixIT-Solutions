@@ -266,3 +266,42 @@ html, body {
     margin-top: 2rem;
   }
 }
+
+/* Mobile Responsive Overrides */
+@media screen and (max-width: 768px) {
+  .top-nav-bar {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 10px 0 !important;
+  }
+
+  /* Shrink the large logo image so nav links fit underneath */
+  .top-nav-bar img,
+  .logo img {
+    max-width: 140px !important;
+    height: auto !important;
+    margin-bottom: 8px !important;
+  }
+
+  .top-nav-bar nav {
+    margin-right: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  /* Stack Hero Section on Homepage */
+  .hero-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 20px 10px !important;
+  }
+
+  .hero-images {
+    width: 100% !important;
+    justify-content: center !important;
+    margin-top: 1.5rem !important;
+  }
+}
